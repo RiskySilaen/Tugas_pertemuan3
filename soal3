@@ -1,0 +1,25 @@
+program temperatur;
+uses crt;
+var suhu,hasil : real; pilih : integer; 
+begin
+    clrscr;
+    writeln('ketik 1 untuk mengubah celsius ke fahrenheit'); 
+    writeln('ketik 2 untuk mengubah fahrenheit ke celcius');
+    writeln('ketik 3 untuk mengubah celcius ke kelvin');
+    writeln('ketik 4 untuk mengubah kelvin ke celcius');
+    write('masukan operasi yang mau dipilih: ');
+    readln(pilih);
+    write('masukan suhu: ');
+    readln(suhu);
+    if pilih=1 then
+    hasil:=9/5*suhu+32
+    else if pilih=2 then
+    hasil:=(suhu-32)*5/9
+    else if pilih=3 then
+    hasil:=suhu+273
+    else if pilih=4 then
+    hasil:=suhu-273
+    else
+    writeln('operasi tidak valid');
+    write('hasil perubahan: ',hasil:0:2);
+end.

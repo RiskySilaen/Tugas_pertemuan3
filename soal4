@@ -1,0 +1,25 @@
+program hitung;
+uses crt;
+var operasi: integer; bilangan1,bilangan2,hasil : real; 
+begin
+    clrscr;
+    writeln('ketik 1 untuk operasi penjumlahan'); 
+    writeln('ketik 2 untuk operasi pengurangan');
+    writeln('ketik 3 untuk operasi perkalian');
+    writeln('ketik 4 untuk operasi pembagian');
+    write('masukan operasi yang mau dipilih: ');
+    readln(operasi);
+    write('masukan bilangan pertama: ');
+    readln(bilangan1);
+    write('masukan bilangan kedua: ');
+    readln(bilangan2);
+    case operasi of
+    1:hasil:= bilangan1+bilangan2;
+    2:hasil:= bilangan1-bilangan2;
+    3:hasil:= bilangan1*bilangan2;
+    4:hasil:= bilangan1/bilangan2;
+    else
+    writeln('operasi tidak valid');
+    end;
+    writeln('hasil operasi: ',hasil:0:2);
+end.

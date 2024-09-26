@@ -1,1 +1,19 @@
+program belanjaan;
+uses crt;
+var 
+harga,total:real;
+begin
+    clrscr;
+    write('masukan harga barang: '); readln(harga);
+    if harga >= 1000000 then 
+    total :=harga*0.7
+    else if harga>=500000 then
+    total :=harga*0.8
+    else if harga>=100000 then 
+    total :=harga*0.9
+    else
+    total := harga;
+    writeln('total yang harus dibayar setelah diskon ',total:0:0);
+end.
+
 
